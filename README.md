@@ -1,2 +1,2 @@
 # MMSentiReader
-Read and Process Multimodal Emotion and Recognition Data
+Read and Process Multimodal Sentiment Analysis and Emotion Recognition Data
