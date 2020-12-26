@@ -5,8 +5,20 @@ Contributor: Qiuchi Li
 
 ## Instructions to run the code
 
+### For a single function
 1. Set up the configurations in config/config_of_the_run.ini
-2. python run.py -config config_of_the_run.ini
+2. python run.py -config config/config_of_the_run.ini
+
+### For processing CMU-Multimodal SDK data
+1. python run.py -config config/download.ini (Data download)
+2. python run.py -config config/align.ini (Data alignment)
+3. python run.py -config config/extract_cmusdk.ini (Extract data to pickle file)
+
+### For processing Conv-Emotion data
+1. Download data from **https://github.com/declare-lab/conv-emotion**
+3. python run.py -config config/pretrain_visual.ini (Optional, pretrain visual features, only for MELD)
+4. python run.py -config config/add_act.ini (Optional, adding dialogue act annotations)
+5. python run.py -config config/extract_conv_emotion.ini (Extract data to pickle file)
 
 ## Configuration setup
 
